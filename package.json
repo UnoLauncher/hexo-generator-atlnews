@@ -1,26 +1,21 @@
 {
-  "name": "hexo-generator-feed",
-  "version": "1.0.1",
-  "description": "Feed generator plugin for Hexo",
+  "name": "hexo-generator-atlnews",
+  "version": "1.0",
+  "description": "ATLauncher news generator plugin for Hexo",
   "main": "index",
-  "scripts": {
-    "test": "gulp test"
-  },
   "directories": {
     "lib": "./lib"
   },
   "engines": {
     "node": ">= 0.10.0"
   },
-  "repository": "hexojs/hexo-generator-feed",
+  "repository": "UnoLauncher/hexo-generator-atlnews",
   "keywords": [
     "hexo",
-    "rss",
-    "feed",
-    "atom",
-    "generator"
+    "generator",
+    "atlauncher"
   ],
-  "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
+  "author": "Jamie Mansfield",
   "license": "MIT",
   "dependencies": {
     "ejs": "^1.0.0",

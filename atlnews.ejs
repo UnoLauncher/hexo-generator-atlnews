@@ -1,0 +1,11 @@
+[
+  <% posts.each(function(post){ %>
+  {
+    "title": "<%-: post.title | cdata %>",
+    "comments": 0,
+    "link": "<%- encodeURI(post.permalink) %>",
+    "published_at": <%= post.date.toDate().getTime() %>,
+    "content": "<%-: post.content | cdata %>"
+  }
+  <% }) %>
+]
