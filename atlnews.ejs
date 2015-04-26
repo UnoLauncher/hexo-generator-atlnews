@@ -1,11 +1,9 @@
 [
-  <% posts.each(function(post){ %>
-  {
-    "title": "<%-: post.title %>",
+  <% posts.each(function(post){ %>{
+    "title": "<%-: post.title | jsonformat %>",
     "comments": 0,
     "link": "<%- encodeURI(post.permalink) %>",
     "published_at": <%= post.date.toDate().getTime() %>,
-    "content": "<%-: post.content %>"
-  }
-  <% }) %>
+    "content": "<%-: post.content.replace(/\r?\n/g, "<br />") | jsonformat %>"
+  }<% }) %>
 ]
