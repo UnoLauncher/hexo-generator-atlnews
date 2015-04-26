@@ -5,8 +5,6 @@ var config = hexo.config.atlnews = merge({
   limit: 20
 }, hexo.config.atlnews);
 
-var type = config.type.toLowerCase();
-
 // Set default feed path
 if (!config.path){
   config.path = 'news.json';
